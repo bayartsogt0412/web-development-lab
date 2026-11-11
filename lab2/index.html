@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 02: Оюутны анкет</title>
+</head>
+<body>
+    <header>
+        <h1>Оюутны Бүртгэлийн Систем</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Нүүр хуудас</a></li>
+                <li><a href="#anket">Анкет</a></li>
+                <li><a href="#sonirhol">Сонирхол</a></li>
+                <li><a href="#dun">Дүн</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="anket">
+                <h2>Бүртгэлийн анкет</h2>
+                <p>Бүх мэдээллийг үнэн зөв, бүрэн бөглөнө үү. Од (*) бүхий талбар заавал шаардлагатай.</p>
+
+                <form action="#" method="POST" enctype="multipart/form-data">
+
+                    <fieldset>
+                        <legend>Хувийн мэдээлэл</legend>
+
+                        <p>
+                            <label for="fullname">Овог, нэр *</label><br>
+                            <input type="text" id="fullname" name="fullname" placeholder="Бат Болд" required minlength="2">
+                        </p>
+
+                        <p>
+                            <label for="email">Имэйл хаяг *</label><br>
+                            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                        </p>
+
+                        <p>
+                            <label for="password">Нууц үг (6-аас дээш тэмдэгт) *</label><br>
+                            <input type="password" id="password" name="password" required minlength="6">
+                        </p>
+
+                        <p>
+                            <label for="phone">Утасны дугаар (8 орон) *</label><br>
+                            <input type="tel" id="phone" name="phone" placeholder="99112233" required pattern="[0-9]{8}" title="8 оронтой тоо оруулна уу">
+                        </p>
+
+                        <p>
+                            <label for="birthdate">Төрсөн огноо *</label><br>
+                            <input type="date" id="birthdate" name="birthdate" required>
+                        </p>
+
+                        <p>
+                            <span>Хүйс *</span><br>
+                            <input type="radio" id="gender-m" name="gender" value="male" required>
+                            <label for="gender-m">Эрэгтэй</label>
+                            <input type="radio" id="gender-f" name="gender" value="female">
+                            <label for="gender-f">Эмэгтэй</label>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Боловсрол ба сонирхол</legend>
+
+                        <p>
+                            <label for="level">Боловсролын түвшин *</label><br>
+                            <select id="level" name="level" required>
+                                <option value="">-- Сонгоно уу --</option>
+                                <option value="bachelor">Бакалавр</option>
+                                <option value="master">Магистр</option>
+                                <option value="doctor">Доктор</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <span>Сонирхдог чиглэл</span><br>
+                            <input type="checkbox" id="skill-html" name="skills" value="HTML">
+                            <label for="skill-html">HTML5 / CSS3</label><br>
+                            <input type="checkbox" id="skill-js" name="skills" value="JavaScript">
+                            <label for="skill-js">JavaScript</label><br>
+                            <input type="checkbox" id="skill-php" name="skills" value="PHP">
+                            <label for="skill-php">PHP &amp; MySQL</label>
+                        </p>
+
+                        <p>
+                            <label for="photo">Профайл зураг</label><br>
+                            <input type="file" id="photo" name="photo" accept="image/*">
+                        </p>
+
+                        <p>
+                            <label for="about">Өөрийн тухай</label><br>
+                            <textarea id="about" name="about" rows="4" cols="50" placeholder="Товч танилцуулга бичнэ үү..."></textarea>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <button type="submit">Илгээх</button>
+                        <button type="reset">Цэвэрлэх</button>
+                    </p>
+                </form>
+            </section>
+        </article>
+
+        <section id="sonirhol">
+            <h2>Миний сонирхол</h2>
+            <ul>
+                <li>Веб хөгжүүлэлт</li>
+                <li>Фото зураг авах</li>
+                <li>Кино үзэх</li>
+            </ul>
+        </section>
+
+        <section id="dun">
+            <h2>Миний дүн</h2>
+            <table border="1" cellpadding="6">
+                <thead>
+                    <tr>
+                        <th>Хичээл</th>
+                        <th>Дүн</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Веб зохиомж</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Мэдээллийн сан</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>Алгоритм</td>
+                        <td>92</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Веб зохиомж хичээл. Бүх эрх хуулиар хамгаалагдсан.</p>
+    </footer>
+</body>
+</html>
