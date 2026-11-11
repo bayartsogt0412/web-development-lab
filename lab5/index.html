@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 05: Responsive вэб хуудас</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <p class="logo">Веб Зохиомж</p>
+
+        <button class="menu-toggle" type="button" aria-label="Цэс нээх" aria-expanded="false" aria-controls="main-nav">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </button>
+
+        <nav class="site-nav" id="main-nav">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="../index.html">Нүүр</a></li>
+                <li><a class="nav-link" href="#labs">Лабораториуд</a></li>
+                <li><a class="nav-link" href="#about">Тухай</a></li>
+                <li><a class="nav-link" href="#contact">Холбоо барих</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">Responsive вэб хуудас</h1>
+            <p class="hero-text">Гар утас, таблет, компьютер бүр дээр зөв харагддаг хуудас зохиомжилно.</p>
+            <a class="hero-button" href="#labs">Дэлгэрэнгүй үзэх</a>
+        </section>
+
+        <section class="content-section" id="labs">
+            <h2 class="section-title">Үндсэн ойлголтууд</h2>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3 class="card-title">Mobile-First</h3>
+                    <p class="card-text">Эхлээд гар утасны загварыг бичиж, дараа нь том дэлгэцэд нэмэлт стиль оруулдаг арга.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card-title">Media Queries</h3>
+                    <p class="card-text">Дэлгэцийн өргөнөөс хамааран CSS дүрмийг өөрчилдөг @media дүрэм.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card-title">Wireframe</h3>
+                    <p class="card-text">Хуудасны бүтцийг өнгө, зураггүйгээр зурсан анхан шатны эх макет.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section" id="about">
+            <h2 class="section-title">Хуудасны тухай</h2>
+            <p class="about-text">Энэ хуудас гар утас (480px хүртэл), таблет (768px-ээс) болон компьютер (1024px-ээс) дээр хэмжээгээ автоматаар тохируулна. Гар утсан дээр навигацийн цэс товчны ард нуугдаж, дарахад нээгдэнэ.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <p>&copy; 2026 Веб зохиомж хичээл</p>
+        <p>Холбоо барих: bayrtsogtb50@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
