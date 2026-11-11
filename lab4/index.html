@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 04: Flexbox ба Grid layout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Веб Зохиомж</h1>
+        <p class="site-slogan">Хичээлийн лабораторийн портал</p>
+    </header>
+
+    <nav class="site-nav">
+        <ul class="nav-list">
+            <li><a class="nav-link" href="../index.html">Нүүр</a></li>
+            <li><a class="nav-link" href="#labs">Лабораториуд</a></li>
+            <li><a class="nav-link" href="#contact">Холбоо барих</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-layout">
+        <main>
+            <section id="labs">
+                <h2 class="section-title">Лабораторийн ажлууд</h2>
+
+                <div class="card-grid">
+                    <article class="card">
+                        <div>
+                            <h3 class="card-title">Лаб 1: Вэбийн үндэс</h3>
+                            <p class="card-text">HTML-ийн үндсэн бүтэц, Git болон GitHub Pages-ийн тохиргоо.</p>
+                        </div>
+                        <a class="card-link" href="../index.html">Нээх</a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3 class="card-title">Лаб 2: Семантик форм</h3>
+                            <p class="card-text">Семантик шошго, бүртгэлийн анкет, жагсаалт, хүснэгт, валидаци.</p>
+                        </div>
+                        <a class="card-link" href="../lab2/index.html">Нээх</a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3 class="card-title">Лаб 3: CSS загвар</h3>
+                            <p class="card-text">Формыг external CSS, box model, position болон Google Fonts-оор загварчлах.</p>
+                        </div>
+                        <a class="card-link" href="../lab3/index.html">Нээх</a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3 class="card-title">Лаб 4: Layout</h3>
+                            <p class="card-text">Flexbox ба CSS Grid ашиглан бүтэн хуудасны макет зохиох.</p>
+                        </div>
+                        <a class="card-link" href="#labs">Одоогийн хуудас</a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3 class="card-title">Flexbox</h3>
+                            <p class="card-text">Нэг чиглэлийн (мөр эсвэл багана) байрлалын систем.</p>
+                        </div>
+                        <a class="card-link" href="#labs">Дэлгэрэнгүй</a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3 class="card-title">CSS Grid</h3>
+                            <p class="card-text">Мөр болон баганаар хоёр хэмжээст байрлал үүсгэх систем.</p>
+                        </div>
+                        <a class="card-link" href="#labs">Дэлгэрэнгүй</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer" id="contact">
+        <p>&copy; 2026 Веб зохиомж хичээл</p>
+        <p>Холбоо барих: student@example.com</p>
+    </footer>
+</body>
+</html>
