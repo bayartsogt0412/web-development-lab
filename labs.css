@@ -1,0 +1,129 @@
+:root {
+    --color-primary: #2f6fed;
+    --color-primary-dark: #1f4fb8;
+    --color-accent: #ff8a3d;
+    --color-bg: #f1f5fb;
+    --color-card: #ffffff;
+    --color-text: #1f2937;
+    --color-muted: #6b7280;
+    --color-border: #cfd8e6;
+    --radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+.site-header {
+    padding: 32px 16px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+}
+
+.site-title {
+    margin: 0 0 6px;
+    font-size: 32px;
+}
+
+.site-subtitle {
+    margin: 0;
+    opacity: 0.9;
+}
+
+.page {
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.section-title {
+    margin: 0 0 20px;
+    color: var(--color-primary-dark);
+}
+
+.lab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.lab-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(31, 79, 184, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lab-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(31, 79, 184, 0.16);
+}
+
+.lab-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+}
+
+.lab-title {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.lab-text {
+    flex: 1;
+    margin: 0 0 16px;
+    color: var(--color-muted);
+    font-size: 15px;
+}
+
+.lab-link {
+    padding: 8px 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--color-accent);
+    border-radius: 6px;
+}
+
+.lab-link:hover {
+    background-color: #e5701f;
+}
+
+.site-footer {
+    padding: 18px 16px;
+    text-align: center;
+    color: #fff;
+    background-color: var(--color-text);
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+}
